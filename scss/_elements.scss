@@ -1,0 +1,40 @@
+
+/* Typography */
+
+button,
+.ba-button{
+color: #ffffff;
+font-family: $header-font-family;
+font-size: 16px;
+line-height: 60px;
+text-transform: uppercase;
+letter-spacing: 1.2px;
+text-decoration: none;
+background-color: $primary-color;
+min-height: 60px;
+padding: 0 38px;
+	display: inline-block;
+
+	&--padding {
+		padding: 0 62px;
+	}
+	&:hover{
+		background-color: darken($primary-color, 15%);
+	}
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	&:focus{
+		
+	}
+}
+
+textarea {
+
+}

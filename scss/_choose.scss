@@ -1,0 +1,26 @@
+.ba-choose-box {
+	margin-top: 84px;
+	h2 {
+		margin-bottom: 66px;
+	}
+
+	p + p {
+		margin-top: 40px;
+	}
+	a {
+		margin-top: 25px;
+	}
+}
+
+.ba-choose-images {
+	
+	
+	&__left {
+		display: block;
+		margin: 0 auto 5px 65px;
+	}
+	&__right{
+		display: block;
+		margin-left: auto;
+	}
+}

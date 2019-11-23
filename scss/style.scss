@@ -1,0 +1,155 @@
+
+$primary-color: #5474FD;
+$text-color: #e8e8e8;
+$body-font-family: "Josefin Sans", sans-serif;
+$header-font-family: "Aleo", sans-serif;
+
+
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "header";
+@import "fonts";
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body{
+	font: 400 16px/1.62 $body-font-family;
+	color: $text-color;
+	border: 15px solid #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+	color: #ffffff;
+	margin: 0 0 30px;
+	line-height: 26px;
+}
+
+h1 {
+font-size: 48px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+h2 {
+font-family: $header-font-family;
+font-size: 36px;
+font-weight: 400;
+}
+
+h3 {
+font-size: 20px;
+font-weight: 400;
+}
+
+p {
+	line-height: 1.48;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.ba-section {
+	padding: 229px 0 100px;
+	&--nav {
+		padding:0;
+		background: $primary-color;
+	}
+
+	&--choose {
+		padding: 120px 0;
+		background: url(../img/third-bg.jpg) 50% no-repeat;
+		background-size: cover;
+	}
+
+	&--icons {
+		background-color: #333333;
+		padding: 99px 0 150px;
+	}
+
+	&--left-column {
+		background: url(../img/fifth-bg.jpg) 50% no-repeat;
+		background-size: cover;
+	}
+	&--right-column {
+		background: url(../img/sixth-bg.jpg) 50% no-repeat;
+		background-size: cover;
+	}
+
+	&--tourist {
+		padding: 128px 0 200px;
+		background: url(../img/seventh-bg.jpg) 50% no-repeat;
+		background-size: cover;
+	}
+}
+
+@import "navigation";
+@import "choose";
+@import "icons";
+
+.ba-info {
+	background: rgba(0,0,0, 0.7);
+	padding: 23px 0 50px 30px;
+
+	&__sup-title {
+		font-size: 20px;
+		margin-bottom: 20px;
+		line-height: 3.7;
+	}
+	
+	&__sub-title {
+		padding: 0;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		letter-spacing: -0.85px;
+	}
+	p {
+		margin-bottom: 43px;
+		line-height: 1.6;
+	}
+}
+
+@import "section-tourist";
+
+footer {
+	background-color: #232323;
+	padding: 128px 0 49px;
+}
+
+.ba-inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.ba-socials {
+		a {
+			text-decoration: none;
+			display: inline-block;
+			svg {
+				fill: #fff;
+				:hover {
+						fill: $primary-color;
+					
+				}
+			}
+
+			
+		}
+	}
+}
